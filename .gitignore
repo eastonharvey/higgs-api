@@ -1,0 +1,11 @@
+# secrets
+.env
+.env.local
+.env.*.local
+# runtime
+output/
+*.sqlite
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/

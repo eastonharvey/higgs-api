@@ -1,0 +1,61 @@
+{
+  "_comment": "Path style model ids and default bodies, from the open.higgsfield.ai api-reference pages read on 2026-10-18. Estimates come from POST /estimate/{model_id}; nothing here is a price.",
+  "video": {
+    "draft": {
+      "model_id": "bytedance/seedance-2.5/text-to-video",
+      "params": {
+        "duration": 5,
+        "resolution": "480p",
+        "aspect_ratio": "16:9",
+        "output_format": "mp4",
+        "generate_audio": false
+      },
+      "notes": "Seedance 2.5 T2V. duration 4-30; resolution 480p|720p|1080p; aspect_ratio 16:9|4:3|1:1|3:4|9:16|21:9."
+    },
+    "standard": {
+      "model_id": "bytedance/seedance-2.5/text-to-video",
+      "params": {
+        "duration": 5,
+        "resolution": "720p",
+        "aspect_ratio": "16:9",
+        "output_format": "mp4",
+        "generate_audio": true
+      },
+      "notes": "Seedance 2.5 T2V at 720p with audio."
+    },
+    "hero": {
+      "model_id": "kling-video/v3.0/4k/text-to-video",
+      "params": {
+        "duration": 5,
+        "sound": "on",
+        "cfg_scale": 0.5,
+        "multi_shots": false,
+        "aspect_ratio": "16:9"
+      },
+      "notes": "Kling 3.0 4K T2V. duration 3-15; aspect_ratio 16:9|9:16|1:1; cfg_scale 0-1; sound on|off."
+    },
+    "animate": {
+      "model_id": "alibaba/wan-3.0/image-to-video",
+      "params": {
+        "duration": 5,
+        "resolution": "1080p",
+        "aspect_ratio": "adaptive",
+        "generate_audio": true,
+        "enable_thinking": false
+      },
+      "notes": "Wan 3.0 I2V. Requires prompt and image_url (first frame); optional end_image_url, seed. duration 2-30; resolution 480p|720p|1080p; aspect_ratio 16:9|4:3|1:1|3:4|9:16|adaptive."
+    }
+  },
+  "image": {
+    "sheet": {
+      "model_id": "higgsfield-ai/soul/v2/standard",
+      "params": {
+        "batch_size": 1,
+        "resolution": "720p",
+        "aspect_ratio": "4:3",
+        "enhance_prompt": true
+      },
+      "notes": "Soul 2. batch_size 1|4; resolution 720p|1080p; aspect_ratio 9:16|16:9|4:3|3:4|1:1|2:3|3:2; optional seed (1-1000000), style_id, custom_reference_id + custom_reference_strength."
+    }
+  }
+}

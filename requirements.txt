@@ -1,0 +1,7 @@
+higgsfield-client>=0.2.0
+python-dotenv>=1.0
+fastapi>=0.110
+uvicorn>=0.29
+httpx>=0.27
+pytest>=8
+respx>=0.21

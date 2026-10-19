@@ -1,0 +1,10 @@
+[
+  {"shot_id": "ep01_sc01_sh01", "episode": "ep01", "scene": "sc01", "kind": "video", "tier": "draft",
+   "prompt": "A cinematic scene at sunset"},
+  {"shot_id": "ep01_sc01_sh02", "episode": "ep01", "scene": "sc01", "kind": "video", "tier": "standard",
+   "prompt": "A cinematic scene at sunset, slow dolly in", "overrides": {"duration": 8}},
+  {"shot_id": "ep01_sc02_sh01", "episode": "ep01", "scene": "sc02", "kind": "video", "tier": "hero",
+   "prompt": "Wide establishing shot of a desert city at dusk"},
+  {"shot_id": "ep01_cast_sheet_01", "episode": "ep01", "scene": "cast", "kind": "image", "tier": "sheet",
+   "prompt": "Editorial portrait in soft daylight", "overrides": {"batch_size": 4}}
+]
