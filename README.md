@@ -52,6 +52,10 @@ python -m hf_pipeline.cost_report            # per scene, per episode, per tier
 - Webhooks: HTTPS only, must answer within 10 s, 4xx is permanent, 5xx retried up to 2 h, duplicates possible.
 - SDK 0.2.0 has no `estimate()` and no idempotency hook. Both are done through the SDK's own authenticated httpx client (`hf_pipeline/http.py`, `submit.py`), so the key is handled only by the SDK.
 
+## Claude skill
+
+`.claude/skills/higgsfield-pipeline/SKILL.md` carries the operating notes and API quirks. Claude Code picks it up automatically when opened in this repo.
+
 ## Not included
 
 - Nano Banana Pro: no public path style api-reference page exists on open.higgsfield.ai (sitemap and OpenAPI checked). The image `sheet` tier uses Soul v2 by decision, not substitution.
