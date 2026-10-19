@@ -5,7 +5,7 @@ Python 3.9+, `higgsfield-client` 0.2.0. Credentials only from `HF_KEY` in `.env.
 ## Setup
 
 ```bash
-cd ~/higgs
+cd ~/higgs-api
 python3 -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
 cp .env.example .env.local      # then put HF_KEY=key-id:key-secret in .env.local
